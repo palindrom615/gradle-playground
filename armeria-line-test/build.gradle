@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.7.10'
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("com.linecorp.armeria:armeria:1.23.1")
+    implementation("com.linecorp.imon:imon-client-tracing-http:0.2.17")
+}

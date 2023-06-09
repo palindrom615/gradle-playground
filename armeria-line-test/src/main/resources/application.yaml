@@ -1,0 +1,10 @@
+armeria:
+  server-enabled: true
+  ports:
+    - port: 8080
+      protocols:
+        - http
+
+log:
+  directory: .
+debug: true

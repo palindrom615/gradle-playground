@@ -9,4 +9,4 @@
 
 rootProject.name = 'gradle-playground'
 
-include 'centraldogma-test'
+include 'centraldogma-test', 'jvm-version-test', 'armeria-line-test'
