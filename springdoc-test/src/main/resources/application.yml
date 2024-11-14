@@ -1,0 +1,13 @@
+springdoc:
+  api-docs:
+    enabled: true
+  show-actuator: true
+
+  swagger-ui:
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web.exposure.include:
+      - openapi
+      - swagger-ui

@@ -6,7 +6,14 @@
  * Detailed information about configuring a multi-project build in Gradle can be found
  * in the user manual at https://docs.gradle.org/7.5/userguide/multi_project_builds.html
  */
-
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            url 'https://maven.example.com/plugins'
+        }
+    }
+}
 rootProject.name = 'gradle-playground'
 
-include 'centraldogma-test', 'jvm-version-test', 'armeria-line-test'
+include 'centraldogma-test', 'armeria-kotlin-grpc-test', 'feign-test', 'hibernate-test', 'springdoc-test', 'arrow-test'

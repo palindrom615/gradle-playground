@@ -8,9 +8,14 @@ targetCompatibility = JavaVersion.VERSION_17
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri('https://repo.linecorp.com/repository/releases/')
+    }
 }
 
 dependencies {
     implementation("com.linecorp.armeria:armeria:1.23.1")
     implementation("com.linecorp.imon:imon-client-tracing-http:0.2.17")
+    implementation('com.linecorp.armeria:armeria-brave:1.23.1')
+    implementation('ch.qos.logback:logback-classic:1.4.5')
 }
